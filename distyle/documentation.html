@@ -6,7 +6,7 @@
 		<meta author="DirectProfile Inc">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.11.0/styles/default.min.css">
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/highlight.js/9.11.0/styles/default.min.css">
 		<script src="https://highlightjs.org/static/highlight.site.pack.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
 
@@ -43,19 +43,84 @@
 				<strong>Example:</strong><br />
 				<p>No example available.</p>
 			</div>
-			<div class="ev1" style="margin-top:7%;">
+			<div class="ev2" style="margin-top:7%;">
 				<h3>Buttons</h3>
 				<p>Use class <strong>button-#color</strong> to create buttons.</p>
 				<br />
 				<strong>Usage:</strong>
-				<pre><code class="html">&lt;button class="button-green"&gt;Test&lt;/button&gt; <br />&lt;button class="button-red"&gt;Test&lt;/button&gt; <br />&lt;button class="button-blue"&gt;Test&lt;/button&gt;</code></pre>
+				<pre><code class="html">&lt;button class="button-green"&gt;Test&lt;/button&gt; <br />&lt;button class="button-red"&gt;Test&lt;/button&gt; <br />&lt;button class="button-blue"&gt;Test&lt;/button&gt;<br />&lt;button class="button-yellow"&gt;Test&lt;/button&gt;<br />&lt;button class="button-orange"&gt;Test&lt;/button&gt;<br />&lt;button class="button-primary"&gt;Test&lt;/button&gt;</code></pre>
 				<br />
 				<strong>Example:</strong><br />
 				<button class="button-green">Button</button>
 				<button class="button-red">Button</button>
+				<button class="button-primary">Button</button>
 				<button class="button-blue">Button</button>
+				<button class="button-yellow">Button</button>
+				<button class="button-orange">Button</button>
 			</div>
+			<div class="ev3" style="margin-top:7%;">
+				<h3>Tables</h3>
+				<p>Create a table in 3 different colors.</p>
+				<br />
+				<strong>Usage:</strong>
+				<pre><code class="html">&lt;div class="table"&gt;
+    	&lt;div class="row red header"&gt;
+            &lt;div class="cell"&gt;Column Name&lt;/div&gt;
+    	&lt;/div&gt;<br />
+       &lt;div class="row"&gt;
+           &lt;div class="cell"&gt;Row Name&lt;/div&gt;
+       &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				<br />
+				<strong>Example:</strong><br /><br />
+				<div class="table">
+    				<div class="row red header">
+    					<div class="cell">Column Name</div>
+    				</div>
+
+					<div class="row">
+      					<div class="cell">Row Name</div>
+    				</div>
+    			</div>
+
+    			<div class="table">
+    				<div class="row green header">
+    				<div class="cell">Column Name</div>
+    			</div>
+
+				<div class="row">
+      				<div class="cell">Row Name</div>
+    			</div>
+    		</div>
+
+    		<div class="table">
+    			<div class="row blue header">
+    				<div class="cell">Column Name</div>
+    			</div>
+
+				<div class="row">
+      				<div class="cell">Row Name</div>
+    			</div>
+    		</div>
+			</div>
+		<div class="ev1" style="margin-top:7%;">
+				<h3>Alert</h3>
+				<p>Create alert boxes.</p>
+				<br />
+				<strong>Usage:</strong>
+				<pre><code class="html">&lt;div class="alert" style="width:600px;"&gt;
+  &lt;span class="close_button" onclick="this.parentElement.style.display='none';"&gt;&amp;times;&lt;/span&gt; 
+  &lt;strong&gt;Alert!&lt;/strong&gt; Here comes your message.
+&lt;/div&gt;</code></pre>
+				<br />
+				<strong>Example:</strong><br /><br />
+				<div class="alert" style="width:600px;">
+  					<span class="close_button" onclick="this.parentElement.style.display='none';">&times;</span> 
+  					<strong>Alert!</strong>  Here comes your message.
+				</div>
 		</div>
+			<br />
+			</div>
 		<div class="center footer" style="width: auto;margin-top: 0;
     border-top: 0;color:white;background-color: #2a2730;">
 				<p style="font-size:17px;">&copy; Copyright 2017, DirectProfile Inc.</p>

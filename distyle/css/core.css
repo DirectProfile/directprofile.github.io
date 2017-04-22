@@ -95,6 +95,25 @@ pre, textarea {
 	word-wrap: normal;
 }
 
+/* Alert box */
+.alert {
+  padding:20px;
+  background-color: #f44336;
+  color:white;
+  border-radius:9px;
+}
+
+.close_button {
+  margin-left:15px;
+  color:white;
+  font-weight: bold;
+  float:right;
+  font-size:22px;
+  line-height: 20px;
+  cursor:pointer;
+  transition: 0.3s;
+}
+
 .button-green {
     background-color: rgba(76, 175, 80, 1.0); /* Green */
     border: none;
@@ -177,6 +196,90 @@ pre, textarea {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px
+}
+
+.button-orange {
+  background-color: rgba(255, 109, 37, 1.0);
+  border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px
+}
+
+.button-orange:hover {
+  background-color: rgba(225, 75, 0, 1.0);
+  border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px
+}
+
+.button-yellow {
+  background-color: rgba(240, 173, 78, 1.0);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px
+}
+
+.button-yellow:hover {
+  background-color: rgba(232, 158, 53, 1.0);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px
+}
+
+.button-primary {
+  background-color: rgb(51, 122, 183);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px
+}
+
+.button-primary:hover {
+  background-color: rgb(32, 77, 116);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px
 }
 
 @media (min-width: 576px) {
@@ -338,6 +441,7 @@ ul.topnav li.right {float: right;}
 @media screen and (max-width: 580px) {
   .table {
     display: block;
+    width:200px;
   }
 }
 
@@ -368,6 +472,13 @@ ul.topnav li.right {float: right;}
   .row {
     padding: 8px 0;
     display: block;
+    width:200px;
+    height: 30px;
+  }
+
+  .row.header {
+    width:200px;
+    height: 30px;
   }
 }
 
