@@ -1,0 +1,406 @@
+/**
+	(c) Copyright 2017, DirectProfile Inc.
+ 		Written by Justin Lange
+	
+	=> Core File, Created on 01/14/2016
+ 	-------------------------------------
+ 	| This software was developed by    |
+ 	| DirectProfile. All right reserved.|
+ 	-------------------------------------
+ */	
+
+html {
+	overflow-y: scroll !important;
+}
+
+body {
+	background-color: rgb(240,240,240);
+
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	margin: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	color: rgb(20,20,20);
+	word-wrap: break-word;
+	line-height: 1.28;
+}
+
+a {
+  color: #0275d8;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #014c8c;
+  text-decoration: underline;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+code, kbd, pre, samp {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+code {
+  padding: 0.2rem 0.4rem;
+  font-size: 90%;
+  color: #bd4147;
+  background-color: #f7f7f9;
+  border-radius: 0.25rem;
+}
+
+a > code {
+  padding: 0;
+  color: inherit;
+  background-color: inherit;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 90%;
+  color: #292b2c;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+small, .small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+pre, textarea {
+	word-wrap: normal;
+}
+
+.button-green {
+    background-color: rgba(76, 175, 80, 1.0); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-green:hover {
+    background-color: rgba(54, 125, 57, 1.0); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-blue {
+	background-color:  rgba(19, 189, 208, 1.0);
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-blue:hover {
+	background-color:  rgba(14, 143, 158, 1.0);
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-red {
+	background-color: rgba(236, 43, 22, 1.0);
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px
+}
+
+.button-red:hover {
+	background-color: rgba(188, 34, 17, 1.0);
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+
+.center {
+	padding: 3rem 1.5rem;
+	text-align: center;
+}
+
+.center p {
+	font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.content {
+	background-color: rgb(240,240,240);
+	margin-left:3%;
+	margin-top:15px;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: #111;
+}
+
+ul.topnav li a.active {
+	background-color: #008CBA;
+}
+
+ul.topnav li.right {float: right;}
+
+.topnav_link {
+	margin-left:3%;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {
+    	float: none;
+    	margin-left: -3%;
+   	}
+}
+
+@media screen and (max-width: 580px) {
+	.table {
+    	display: block;
+    }
+}
+
+@media screen and (max-width: 580px) {
+	.row {
+    	padding: 8px 0;
+    	display: block;
+    }
+}
+
+@media screen and (max-width: 580px) {
+	.cell {
+    	padding: 2px 12px;
+    	display: block;
+    }
+}
+
+.table {
+	margin: 0 0 40px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+}
+
+.row.header {
+    font-weight: 900;
+    color: #ffffff;
+    background: #ea6153;
+}
+
+.row:nth-of-type(odd) {
+    background: #e9e9e9;
+}
+
+.cell {
+    padding: 6px 12px;
+    display: table-cell;
+}
+
+
+@media screen and (max-width: 580px) {
+  .table {
+    display: block;
+  }
+}
+
+.row {
+  display: table-row;
+  background: #f6f6f6;
+}
+
+.row:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+
+.row.header {
+  font-weight: 900;
+  color: #ffffff;
+  background: #ea6153;
+}
+
+.row.green {
+  background: #27ae60;
+}
+
+.row.blue {
+  background: #2980b9;
+}
+
+@media screen and (max-width: 580px) {
+  .row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
