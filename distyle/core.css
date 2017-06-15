@@ -7,7 +7,7 @@
  	| This software was developed by    |
  	| DirectProfile. All right reserved.|
  	-------------------------------------
- */	 
+ */	
 
 html {
 	overflow-y: scroll !important;
@@ -254,32 +254,34 @@ pre, textarea {
   border-radius: 8px
 }
 
-.button-primary {
-  background-color: rgb(51, 122, 183);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px
+/* Primary Button */
+.btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.button-primary:hover {
-  background-color: rgb(32, 77, 116);
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px
+.btn-primary:hover {
+  background-color: #025aa5;
+  text-decoration:none;
+  color:white;
 }
 
 @media (min-width: 576px) {
